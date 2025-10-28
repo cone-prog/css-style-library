@@ -1,7 +1,32 @@
 body {
     background-color: #f1f1f1;
     font-size: 16px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial',
+        sans-serif;
+}
+
+@media (width <=500px) {
+    body {
+        background-color: #ff8b94;
+    }
+}
+
+@media (501px<=width <=1000px) {
+    body {
+        background-color: #61a0e7;
+    }
+}
+
+@media (1001px<=width<=1500px) {
+    body {
+        background-color: #b19cd9;
+    }
+}
+
+@media (1501px<=width<=2000px) {
+    body {
+        background-color: #ffcc99;
+    }
 }
 
 .header {
