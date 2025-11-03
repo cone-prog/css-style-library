@@ -6,7 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
     <style>
+        body {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: 1fr 5fr 1fr;
+            gap: 10px;
+            background-color: #D8D9De;
 
+        }
+
+        .header {
+            grid-column: span 2;
+            background-color: #393B45;
+
+        }
+
+        .aside {
+            background-color: #6E7889;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            /* justify-content: space   -between; */
+
+        }
+
+        .footer {
+            background-color: #584848;
+            grid-column: span 2;
+        }
+
+        .section {
+            background-color: #F3B54A;
+            display: flex;
+            border: 10px solid #F3B54A;
+            border-radius: 10%;
+        }
     </style>
 </head>
 
