@@ -10,7 +10,7 @@
             height: 100vh;
             display: grid;
             grid-template-columns: 1fr 5fr;
-            grid-template-rows: 1fr 5fr 1fr;
+            grid-template-rows: 1fr 7fr 1fr;
             gap: 10px;
             background-color: #D8D9De;
 
@@ -44,6 +44,13 @@
             display: flex;
             border: 10px solid #F3B54A;
             border-radius: 10%;
+        }
+
+        @media (max-width:400px) {
+            .main {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
         }
     </style>
 </head>
